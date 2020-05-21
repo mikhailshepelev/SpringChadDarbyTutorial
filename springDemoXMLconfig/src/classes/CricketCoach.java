@@ -1,4 +1,4 @@
-package com.luv2code.springdemo;
+package classes;
 
 public class CricketCoach implements Coach {
 

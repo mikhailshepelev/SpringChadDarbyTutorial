@@ -1,12 +1,13 @@
-package com.luv2code.springdemo;
+package mainApps;
 
+import classes.Coach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class HelloSpringApp {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("applicationContext.xml");
+                new ClassPathXmlApplicationContext("resources/applicationContext.xml");
 
         //the app is configurable this way
         Coach theCoach = context.getBean("myCoach", Coach.class);

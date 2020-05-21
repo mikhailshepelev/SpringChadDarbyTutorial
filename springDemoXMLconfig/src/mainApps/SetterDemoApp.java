@@ -1,11 +1,12 @@
-package com.luv2code.springdemo;
+package mainApps;
 
+import classes.CricketCoach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SetterDemoApp {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("applicationContext.xml");
+                new ClassPathXmlApplicationContext("resources/applicationContext.xml");
         //we use CricketCoach var type because Coach class doesnt have methods getEmail and getTeam
         CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);
         System.out.println(theCoach.getDailyWorkout());

@@ -1,4 +1,7 @@
-package com.luv2code.springdemo;
+package mainApps;
+
+import classes.Coach;
+import classes.TrackCoach;
 
 public class MyApp {
 

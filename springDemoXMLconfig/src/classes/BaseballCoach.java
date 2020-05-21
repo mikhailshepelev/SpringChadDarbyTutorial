@@ -1,6 +1,6 @@
-package com.luv2code.springdemo;
+package classes;
 
-public class BaseballCoach implements Coach{
+public class BaseballCoach implements Coach {
 
     private FortuneService fortuneService;
 
