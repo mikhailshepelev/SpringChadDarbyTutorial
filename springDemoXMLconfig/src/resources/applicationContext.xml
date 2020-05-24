@@ -12,6 +12,9 @@
     <bean id="myFortune"
           class="classes.HappyFortuneService">
     </bean>
+    <bean id="badFortune"
+          class="classes.BadFortuneService">
+    </bean>
     <bean id="myCoach"
           class="classes.TrackCoach">
         <!--set up constructor injection-->
@@ -30,5 +33,9 @@
         <property name="fortuneService" ref="myFortune"/>
         <property name="emailAddress" value="${foo.email}"/>
         <property name="team" value="${foo.team}"/>
+    </bean>
+    <bean id="footballCoach"
+    class="classes.FootballCoach">
+        <constructor-arg ref="badFortune"/>
     </bean>
 </beans>

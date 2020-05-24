@@ -19,6 +19,14 @@ public class BeanScopeDemoApp {
         System.out.println("Memory location for theCoach: " + theCoachPrototype);
         System.out.println("Memory location for alphaCoach: " + alphaCoachPrototype);
 
+        System.out.println("=========================================");
+
+        Coach footballCoach = context.getBean("footballCoach", Coach.class);
+        Coach otherFootballCoach = context.getBean("footballCoach", Coach.class);
+        System.out.println("Pointing to the same object: " + footballCoach.equals(otherFootballCoach));
+        System.out.println("Memory location for theCoach: " + footballCoach);
+        System.out.println("Memory location for alphaCoach: " + otherFootballCoach);
+
         context.close();
     }
 }

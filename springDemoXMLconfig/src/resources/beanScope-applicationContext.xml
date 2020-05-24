@@ -19,4 +19,9 @@
         <!--set up constructor injection-->
         <constructor-arg ref="myFortune" />
     </bean>
+    <bean id="footballCoach"
+          class="classes.FootballCoach"
+          scope="prototype">
+    </bean>
+
 </beans>
