@@ -46,7 +46,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 				//allow this path only for given role
 		.and()
 				.formLogin() //we are customizing the form login process
-		.loginPage("/showMyLoginPage") //shpw our customer form at the request mapping
+		.loginPage("/showMyLoginPage") //show our customer form at the request mapping
 		.loginProcessingUrl("/authenticateTheUser") //login form should POST data to this URL for processing
 		.permitAll() //allow everyone to see login page. No need to be logged in
 		.and().logout().permitAll() //add logout support
