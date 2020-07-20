@@ -24,6 +24,28 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+<!--        ADD SUPPORT FOR AUTOMATIC RELOADING-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <version>2.3.1.RELEASE</version>
+        </dependency>
+
+<!--        ADD SUPPORT FOR SPRING BOOT ACTUATOR, FREE ENDPOINTS TO CHECK STATUS OF APP-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>2.3.1.RELEASE</version>
+        </dependency>
+
+<!--        ADD SUPPORT FOR SPRING SECURITY TO PREVENT ACCESS TO ACTUATOR DATA BY DEFAULT-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
